@@ -8,14 +8,11 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger()
   ].filter(Boolean),
-
   base: "/truck/",
-
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src")
     },
-
     dedupe: [
       "react",
       "react-dom",
