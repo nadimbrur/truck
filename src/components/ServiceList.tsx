@@ -3,29 +3,32 @@ import { services } from "@/data/services";
 
 const ServiceList = () => {
   return (
-    // <section className="py-20 bg-white">
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
 
-        {/* SECTION HEADER */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Our Services
+        {/* HEADER */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+
+          <p className="text-sm uppercase tracking-widest text-blue-600 font-semibold">
+            What We Offer
+          </p>
+
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+            Reliable Vehicle Solutions for Your Business
           </h2>
 
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-            We provide trusted solutions for vehicle trading, used cars, and
-            commercial truck sales to keep businesses and logistics moving.
+          <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
+            From high-quality Japanese truck exports to used vehicle trading,
+            we provide dependable solutions that support logistics, mobility,
+            and business growth worldwide.
           </p>
         </div>
 
-        {/* CARDS GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-
+        {/* GRID */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
           {services.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}
-
         </div>
 
       </div>
