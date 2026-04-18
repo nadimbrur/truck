@@ -67,7 +67,8 @@ const HeroSection = () => {
               style={{ backgroundColor: BRAND }}
               className="text-white hover:opacity-90 font-semibold px-8 py-6 text-base"
             >
-              <a href="/brands">Browse Trucks</a>
+              {/* <a href="/brands">Browse Trucks</a> */}
+              <Link to="/brands">Browse Trucks</Link>
             </Button>
 
             {/* <Button
