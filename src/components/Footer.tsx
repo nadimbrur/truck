@@ -107,9 +107,18 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm text-gray-600">
             <li>
-              <Link to="/" className="hover:text-black transition">
+              {/* <Link to="/" className="hover:text-black transition">
+                Home
+              </Link> */}
+
+              <Link
+                to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="hover:text-black transition"
+              >
                 Home
               </Link>
+
             </li>
             <li>
               <Link to="/brands" className="hover:text-black transition">
