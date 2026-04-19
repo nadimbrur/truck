@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const BRAND = "#005ecc";
 
 const Footer = () => {
@@ -23,13 +25,13 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm text-gray-600">
             <li>
-              <a href="/" className="hover:text-black">Home</a>
+              <Link to="/" className="hover:text-black">Home</Link>
             </li>
             <li>
-              <a href="/#/brands" className="hover:text-black">Trucks</a>
+              <Link to="/brands" className="hover:text-black">Trucks</Link>
             </li>
             <li>
-              <a href="/#/contact" className="hover:text-black">Contact</a>
+              <Link to="/contact" className="hover:text-black">Contact</Link>
             </li>
           </ul>
         </div>
